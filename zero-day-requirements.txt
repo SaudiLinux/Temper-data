@@ -1,0 +1,21 @@
+# متطلبات أدوات فحص ثغرات اليوم الصفري المتقدمة
+# Advanced Zero-Day Vulnerability Scanner Requirements
+
+# مكتبات HTTP والشبكات | HTTP and Network Libraries
+requests>=2.28.0
+urllib3>=1.26.0
+
+# مكتبات أمنية وتشفير | Security and Cryptography Libraries
+cryptography>=3.4.8
+
+# مكتبات DNS وتحليل الشبكات | DNS and Network Analysis
+dnspython>=2.2.0
+
+# مكتبات متقدمة للفحص | Advanced Scanning Libraries
+# (مكتبات مدمجة في Python الأساسية)
+
+# ملاحظة: هذه الأدوات تعتمد على مكتبات Python الأساسية لتقليل الاعتمادات الخارجية
+# Note: These tools rely on Python standard libraries to minimize external dependencies
+
+# للتحقق من التثبيت | For verification
+# python -m pip install -r zero-day-requirements.txt

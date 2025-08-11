@@ -1,0 +1,33 @@
+# متطلبات أدوات فحص الثغرات في المنصات والخدمات الشهيرة
+# Platform Vulnerability Scanner Requirements
+
+# مكتبات HTTP وطلبات الشبكة
+requests>=2.25.1
+urllib3>=1.26.0
+
+# مكتبات DNS للفحص
+ dnspython>=2.1.0
+
+# مكتبات SSL وشبكات
+ssl
+socket
+
+# مكتبات JSON ومعالجة البيانات
+json
+argparse
+concurrent.futures
+
+# مكتبات التاريخ والوقت
+ datetime
+
+# مكتبات النظام والملفات
+os
+sys
+re
+
+# مكتبات إضافية
+urllib3
+
+# ملاحظة: هذه المكتبات معيارية في Python 3.6+
+# يمكن تثبيتها باستخدام:
+# pip install -r platform-requirements.txt

@@ -1,0 +1,14 @@
+[
+  {
+    "service": "SSL Certificate",
+    "issue": "Certificate Expiry",
+    "risk_level": "HIGH",
+    "description": "شهادة SSL تنتهي في: Aug 17 23:59:59 2026 GMT"
+  },
+  {
+    "service": "DNS MX",
+    "issue": "No MX Records",
+    "risk_level": "LOW",
+    "description": "لا توجد سجلات MX للنطاق"
+  }
+]

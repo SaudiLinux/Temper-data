@@ -1,0 +1,59 @@
+# Cloud Security Scanner Requirements
+# متطلبات أدوات فحص أمن السحابات
+
+# AWS SDK
+boto3>=1.26.0
+botocore>=1.29.0
+
+# Azure SDK
+azure-identity>=1.12.0
+azure-mgmt-storage>=21.0.0
+azure-mgmt-compute>=29.0.0
+azure-mgmt-sql>=4.0.0
+azure-mgmt-network>=23.0.0
+azure-mgmt-keyvault>=10.2.0
+azure-mgmt-web>=7.0.0
+azure-storage-blob>=12.14.0
+
+# Google Cloud SDK
+google-cloud-storage>=2.7.0
+google-cloud-compute>=1.11.0
+google-cloud-sql>=1.9.0
+google-cloud-iam>=2.11.0
+google-cloud-secret-manager>=2.16.0
+google-cloud-dns>=0.34.0
+google-cloud-core>=2.3.0
+
+# Core dependencies
+requests>=2.28.0
+urllib3>=1.26.0
+
+# Network and DNS
+dnslib>=0.9.23
+dnspython>=2.3.0
+
+# Utilities
+python-dateutil>=2.8.0
+pytz>=2022.7
+
+# Authentication and security
+cryptography>=39.0.0
+pyjwt>=2.6.0
+
+# CLI and argument parsing
+argparse>=1.4.0
+
+# JSON and data handling
+jsonschema>=4.17.0
+
+# Logging and monitoring
+python-dotenv>=0.21.0
+
+# Development and testing
+pytest>=7.2.0
+pytest-mock>=3.10.0
+
+# Optional: For enhanced functionality
+colorama>=0.4.6
+rich>=13.0.0
+tabulate>=0.9.0

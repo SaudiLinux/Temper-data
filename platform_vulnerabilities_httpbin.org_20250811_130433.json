@@ -1,0 +1,74 @@
+{
+  "target": "httpbin.org",
+  "scan_date": "2025-08-11T13:04:33.699536",
+  "total_vulnerabilities": 9,
+  "critical": 0,
+  "high": 7,
+  "medium": 2,
+  "low": 0,
+  "vulnerabilities": [
+    {
+      "platform": "Zoom",
+      "vulnerability": "Exposed Meeting",
+      "url": "https://zoom.us/j/httpbin.org",
+      "risk_level": "HIGH",
+      "description": "اجتماع Zoom مكشوف: https://zoom.us/j/httpbin.org"
+    },
+    {
+      "platform": "Zoom",
+      "vulnerability": "Exposed Meeting",
+      "url": "https://us02web.zoom.us/j/httpbin.org",
+      "risk_level": "HIGH",
+      "description": "اجتماع Zoom مكشوف: https://us02web.zoom.us/j/httpbin.org"
+    },
+    {
+      "platform": "Zoom",
+      "vulnerability": "Exposed Meeting",
+      "url": "https://us04web.zoom.us/j/httpbin.org",
+      "risk_level": "HIGH",
+      "description": "اجتماع Zoom مكشوف: https://us04web.zoom.us/j/httpbin.org"
+    },
+    {
+      "platform": "Zoom",
+      "vulnerability": "Exposed Meeting",
+      "url": "https://us05web.zoom.us/j/httpbin.org",
+      "risk_level": "HIGH",
+      "description": "اجتماع Zoom مكشوف: https://us05web.zoom.us/j/httpbin.org"
+    },
+    {
+      "platform": "Zoom",
+      "vulnerability": "Exposed Meeting",
+      "url": "https://us06web.zoom.us/j/httpbin.org",
+      "risk_level": "HIGH",
+      "description": "اجتماع Zoom مكشوف: https://us06web.zoom.us/j/httpbin.org"
+    },
+    {
+      "platform": "Zoom",
+      "vulnerability": "Exposed Meeting",
+      "url": "https://us07web.zoom.us/j/httpbin.org",
+      "risk_level": "HIGH",
+      "description": "اجتماع Zoom مكشوف: https://us07web.zoom.us/j/httpbin.org"
+    },
+    {
+      "platform": "Zoom",
+      "vulnerability": "Exposed Meeting",
+      "url": "https://zoom.us/wc/join/httpbin.org",
+      "risk_level": "HIGH",
+      "description": "اجتماع Zoom مكشوف: https://zoom.us/wc/join/httpbin.org"
+    },
+    {
+      "platform": "Zoom",
+      "vulnerability": "API Information Leak",
+      "url": "https://api.zoom.us/v2/meetings/httpbin.org",
+      "risk_level": "MEDIUM",
+      "description": "معلومات API Zoom متاحة"
+    },
+    {
+      "platform": "Cloud Server",
+      "vulnerability": "Exposed Instance",
+      "hostname": "httpbin.org.googleusercontent.com",
+      "risk_level": "MEDIUM",
+      "description": "خادم سحابي مكشوف: httpbin.org.googleusercontent.com"
+    }
+  ]
+}

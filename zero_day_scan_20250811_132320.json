@@ -1,0 +1,66 @@
+[
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: $(sleep 5) - Response time: 0.8430001735687256s",
+    "timestamp": "2025-08-11T13:23:11.064392"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: `sleep 5` - Response time: 0.42299914360046387s",
+    "timestamp": "2025-08-11T13:23:11.490391"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: ;sleep 5 - Response time: 0.16699814796447754s",
+    "timestamp": "2025-08-11T13:23:11.658396"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: |sleep 5 - Response time: 0.1665196418762207s",
+    "timestamp": "2025-08-11T13:23:11.835918"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: &ping -n 5 127.0.0.1 - Response time: 0.16554689407348633s",
+    "timestamp": "2025-08-11T13:23:12.001983"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: {{7*7}} - Response time: 0.8764641284942627s",
+    "timestamp": "2025-08-11T13:23:13.199488"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: #{7*7} - Response time: 0.8160209655761719s",
+    "timestamp": "2025-08-11T13:23:14.018513"
+  },
+  {
+    "target": "http://httpbin.org",
+    "vulnerability_type": "ثغرة RCE",
+    "risk_level": "CRITICAL",
+    "description": "تم اكتشاف ثغرة تنفيذ أوامر بعيدة محتملة",
+    "evidence": "Payload: ${7*7} - Response time: 0.6092250347137451s",
+    "timestamp": "2025-08-11T13:23:14.637734"
+  }
+]
