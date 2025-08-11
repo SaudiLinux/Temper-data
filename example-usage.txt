@@ -1,0 +1,63 @@
+═══════════════════════════════════════════════════════════════
+                   Temper-Data Usage Examples
+═══════════════════════════════════════════════════════════════
+
+Developer: SayerLinux
+GitHub: https://github.com/SaudiLinux
+Email: SayerLinux@gmail.com
+═══════════════════════════════════════════════════════════════
+
+🚀 BASIC USAGE:
+
+1. Install dependencies:
+   install.bat
+   OR
+   pip install -r requirements.txt
+
+2. Run basic scan:
+   python temper-data.py -u https://example.com
+
+3. Run with custom output:
+   python temper-data.py -u https://target-site.com -o my-results.json
+
+4. Run with more threads:
+   python temper-data.py -u https://wordpress-site.com -t 20
+
+🎯 REAL EXAMPLES:
+
+# WordPress site scan
+python temper-data.py -u https://wordpress.org
+
+# Joomla site scan  
+python temper-data.py -u https://joomla.org
+
+# Custom site with output
+python temper-data.py -u https://my-target.com -o security-report.json
+
+🔍 WHAT THE TOOL SCANS:
+
+✅ CMS Detection (WordPress/Joomla)
+✅ Vulnerability Scanning
+✅ Hidden URL Discovery
+✅ Admin Panel Detection
+✅ WAF Bypass Testing
+✅ Security Headers Check
+✅ Backup Files Discovery
+✅ Configuration Files Exposure
+
+📊 OUTPUT INCLUDES:
+- Vulnerabilities found
+- Hidden URLs discovered
+- Admin panel locations
+- WAF bypass results
+- Complete JSON report
+
+⚠️ IMPORTANT NOTES:
+
+- Only scan sites you own or have permission to test
+- The tool includes WAF bypass techniques - use responsibly
+- Results are saved in JSON format for further analysis
+- Always check local laws before scanning
+
+For support: SayerLinux@gmail.com
+GitHub: https://github.com/SaudiLinux/temper-data
