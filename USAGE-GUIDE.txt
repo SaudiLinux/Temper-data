@@ -1,0 +1,378 @@
+# دليل استخدام شامل لأدوات الأمن السيبراني
+# Comprehensive Cyber Security Tools Usage Guide
+
+===============================================
+## 📋 نظرة عامة على جميع الأدوات المتوفرة
+## Overview of All Available Security Tools
+
+### 🔥 **مجموعات الأدوات الكاملة:**
+
+#### 1️⃣ **أدوات الأمن السحابي** (Cloud Security Scanners)
+- `aws-security-scanner.py` - فحص AWS S3 والخدمات السحابية
+- `azure-security-scanner.py` - فحص Microsoft Azure
+- `gcp-security-scanner.py` - فحص Google Cloud Platform
+- `cloud-requirements.txt` - متطلبات التثبيت
+
+#### 2️⃣ **أدوات فحص المنصات** (Platform Vulnerability Scanners)
+- `platform-vulnerability-scanner.py` - فحص شامل للمنصات الشهيرة
+- `exchange-vulnerability-scanner.py` - فحص Microsoft Exchange
+- `zoom-vulnerability-scanner.py` - فحص Zoom واجتماعات الفيديو
+- `platform-requirements.txt` - متطلبات التثبيت
+
+#### 3️⃣ **أدوات الثغرات الصفرية** (Zero-Day Vulnerability Detectors)
+- `zero-day-scanner.py` - فحص الثغرات الصفرية العامة (Log4Shell, SSRF, RCE)
+- `web-zero-day-scanner.py` - فحص تطبيقات الويب (SSTI, NoSQL, GraphQL)
+- `network-zero-day-scanner.py` - فحص خدمات الشبكة (SSH, RDP, databases)
+- `zero-day-requirements.txt` - متطلبات التثبيت
+
+#### 4️⃣ **أدوات CMS المخصصة** (CMS Specific Tools)
+- `temper-data.py` - فحص WordPress وJoomla
+- `requirements.txt` - متطلبات التثبيت الأساسية
+
+===============================================
+## 🚀 خطوات التثبيت السريعة
+## Quick Installation Steps
+
+### ✅ المتطلبات الأساسية:
+- Python 3.7 أو أحدث
+- Windows / Linux / macOS
+- اتصال إنترنت نشط
+
+### 📥 تثبيت جميع الأدوات دفعة واحدة:
+
+```bash
+# 1. تثبيت جميع المتطلبات
+cd C:\Users\Dell\Desktop\TemparData
+
+# تثبيت أدوات السحابة
+pip install -r cloud-requirements.txt
+
+# تثبيت أدوات المنصات  
+pip install -r platform-requirements.txt
+
+# تثبيت أدوات الثغرات الصفرية
+pip install -r zero-day-requirements.txt
+
+# تثبيت المتطلبات الأساسية
+pip install -r requirements.txt
+```
+
+### 🔧 التحقق من التثبيت:
+```bash
+python --version
+pip list
+```
+
+===============================================
+## 📖 دليل الاستخدام السريع لكل أداة
+## Quick Usage Guide for Each Tool
+
+### 🔍 **أدوات الأمن السحابي**
+
+#### فحص AWS:
+```bash
+python aws-security-scanner.py [domain/URL]
+python aws-security-scanner.py example.com
+```
+
+#### فحص Azure:
+```bash
+python azure-security-scanner.py [domain/URL]
+python azure-security-scanner.py company.com
+```
+
+#### فحص GCP:
+```bash
+python gcp-security-scanner.py [domain/URL]
+python gcp-security-scanner.py target.org
+```
+
+### 🌐 **أدوات فحص المنصات**
+
+#### فحص شامل لجميع المنصات:
+```bash
+python platform-vulnerability-scanner.py [target]
+python platform-vulnerability-scanner.py httpbin.org
+```
+
+#### فحص Microsoft Exchange فقط:
+```bash
+python exchange-vulnerability-scanner.py [domain]
+python exchange-vulnerability-scanner.py mail.company.com
+```
+
+#### فحص Zoom فقط:
+```bash
+python zoom-vulnerability-scanner.py [domain]
+python zoom-vulnerability-scanner.py zoom-target.com
+```
+
+### ⚡ **أدوات الثغرات الصفرية**
+
+#### فحص الثغرات الصفرية العامة:
+```bash
+python zero-day-scanner.py [target]
+python zero-day-scanner.py httpbin.org
+```
+
+#### فحص تطبيقات الويب المتقدمة:
+```bash
+python web-zero-day-scanner.py [URL]
+python web-zero-day-scanner.py https://target.com
+```
+
+#### فحص خدمات الشبكة:
+```bash
+python network-zero-day-scanner.py [host/IP]
+python network-zero-day-scanner.py 192.168.1.1
+```
+
+### 🎯 **أداة CMS (WordPress/Joomla)**
+
+#### الاستخدام الأساسي:
+```bash
+python temper-data.py -u [URL]
+python temper-data.py -u https://wordpress-site.com
+```
+
+#### الاستخدام المتقدم:
+```bash
+python temper-data.py -u https://joomla-site.com -o results.json -t 15
+```
+
+===============================================
+## ⚙️ الخيارات المتقدمة لجميع الأدوات
+## Advanced Options for All Tools
+
+### خيارات مشتركة لمعظم الأدوات:
+- `--threads N` - عدد الخيوط المتوازية (افتراضي: 10)
+- `--timeout N` - مهلة الاتصال بالثواني (افتراضي: 30)
+- `--output FILE` - اسم ملف النتائج المخصص
+- `--verbose` - عرض تفاصيل إضافية
+- `--no-auto-save` - تعطيل الحفظ التلقائي
+
+### أمثلة على الاستخدام المتقدم:
+```bash
+# فحص مع خيارات متقدمة
+python zero-day-scanner.py target.com --threads 20 --timeout 60 --verbose
+
+# فحص مع حفظ النتائج المخصص
+python aws-security-scanner.py company.com --output aws-scan-results.json
+
+# فحص سريع مع خيوط متعددة
+python platform-vulnerability-scanner.py site.com --threads 50 --timeout 10
+```
+
+===============================================
+## 📊 فهم وتفسير النتائج
+## Understanding and Interpreting Results
+
+### تصنيفات المخاطر الموحدة:
+- **CRITICAL/حرج** - ثغرات خطيرة تتطلب إصلاح فوري
+- **HIGH/عالي** - مخاطر كبيرة يجب معالجتها سريعاً
+- **MEDIUM/متوسط** - مخاطر متوسطة تتطلب مراجعة
+- **LOW/منخفض** - مخاطر بسيطة أو معلوماتية
+
+### صيغ ملفات النتائج:
+- **JSON** - للتحليل البرمجي والتكامل مع أدوات أخرى
+- **تسمية تلقائية** - تحتوي على التاريخ والوقت
+- **حفظ تلقائي** - تُحفظ في نفس مجلد الأداة
+
+### أمثلة على أسماء ملفات النتائج:
+```
+zero_day_scan_target.com_20250811_132320.json
+aws_security_scan_company.com_20250811_130433.json
+platform_vulnerabilities_site.org_20250811_132358.json
+```
+
+===============================================
+## 🎯 أمثلة عملية متقدمة
+## Advanced Practical Examples
+
+### مثال 1: فحص شامل لشركة كاملة
+```bash
+# إعداد البيئة
+cd C:\Users\Dell\Desktop\TemparData
+
+# تثبيت جميع المتطلبات
+pip install -r cloud-requirements.txt
+pip install -r platform-requirements.txt
+pip install -r zero-day-requirements.txt
+
+# فحص السحابة
+python aws-security-scanner.py company.com --threads 20
+python azure-security-scanner.py company.com --threads 20
+
+# فحص المنصات
+python platform-vulnerability-scanner.py company.com --verbose
+
+# فحص الثغرات الصفرية
+python zero-day-scanner.py company.com --timeout 60
+python web-zero-day-scanner.py https://company.com --threads 15
+```
+
+### مثال 2: فحص موقع ويب شامل
+```bash
+# فحص CMS أولاً
+python temper-data.py -u https://target-site.com -o cms-results.json
+
+# فحص المنصات
+python platform-vulnerability-scanner.py target-site.com
+
+# فحص الثغرات الصفرية
+python zero-day-scanner.py target-site.com
+python web-zero-day-scanner.py https://target-site.com
+```
+
+### مثال 3: فحص بنية شبكة داخلية
+```bash
+# فحص خدمات الشبكة
+python network-zero-day-scanner.py 192.168.1.1
+python network-zero-day-scanner.py 10.0.0.1 --threads 30
+
+# فحص المنصات على الخوادم الداخلية
+python platform-vulnerability-scanner.py 192.168.1.100
+```
+
+===============================================
+## ⚠️ تحذيرات أمنية وقانونية مهمة
+## Critical Security and Legal Warnings
+
+### 🔒 قبل البدء:
+- **احصل على إذن كتابي صريح** من مالك النظام
+- **تحقق من السياسات القانونية** في بلدك
+- **استخدم فقط في بيئات التطوير أو الاختبار**
+- **احترم سياسات الاستخدام المسموح به**
+
+### 🚨 أثناء الاستخدام:
+- **لا تستخدم في أنظمة الإنتاج** بدون موافقة صريحة
+- **راجع جميع النتائج يدوياً** قبل اتخاذ أي إجراء
+- **احتفظ بالنتائج في مواقع آمنة ومشفرة**
+- **لا تشارك النتائج مع جهات غير مصرح لها**
+
+### 📋 بعد الانتهاء:
+- **احذف النتائج الحساسة** بعد الانتهاء من التحليل
+- **بلغ عن الثغرات بطريقة مسؤولة (Responsible Disclosure)**
+- **حدث الأدوات بانتظام** للحصول على أحدث التحسينات
+- **وثق جميع الإجراءات التي اتخذتها**
+
+### 🛡️ أفضل الممارسات:
+```bash
+# استخدم VPN أو شبكة آمنة عند الاختبار
+# احتفظ بسجلات لجميع أعمال الفحص
+# استخدم بيئات اختبار معزولة عند الممكن
+# راجع النتائج مع فريق الأمن قبل اتخاذ إجراءات
+```
+
+===============================================
+## 🔧 استكشاف الأخطاء وحلولها
+## Troubleshooting Common Issues
+
+### مشكلة: "Module not found"
+```bash
+# الحل: تثبيت المكتبة المفقودة
+pip install requests colorama urllib3
+# أو تثبيت جميع المتطلبات
+pip install -r zero-day-requirements.txt
+```
+
+### مشكلة: "Connection timeout"
+```bash
+# الحل: زيادة مهلة الاتصال
+python tool.py target.com --timeout 60
+# أو استخدام خيارات أقل عدد خيوط
+python tool.py target.com --threads 5
+```
+
+### مشكلة: "Permission denied"
+```bash
+# Windows: تشغيل PowerShell كمسؤول
+# Linux/Mac: استخدام sudo مع الحذر
+sudo python tool.py target.com
+```
+
+### مشكلة: "SSL certificate verify failed"
+```bash
+# الحل: تحديث شهادات SSL أو استخدام خيارات تجاوز
+pip install --upgrade certifi
+# أو في الكود: verify=False (غير مستحسن)
+```
+
+### مشكلة: "Rate limiting"
+```bash
+# الحل: تقليل عدد الخيوط وزيادة التأخير
+python tool.py target.com --threads 3 --timeout 30
+```
+
+===============================================
+## 📞 الدعم والمساعدة الشاملة
+## Comprehensive Support and Help
+
+### 📚 ملفات المساعدة المفصلة:
+- `CLOUD-SECURITY-README.md` - تفاصيل كاملة لأدوات السحابة
+- `PLATFORM-VULNERABILITY-README.md` - تفاصيل فحص المنصات
+- `ZERO-DAY-SCANNER-README.md` - تفاصيل الثغرات الصفرية
+- `README.txt` - دليل أداة Temper-Data الأصلية
+
+### 🌐 الموارد الإضافية:
+- **GitHub**: ملفات README لكل أداة
+- **ملفات JSON**: أمثلة على نتائج الفحص
+- **متطلبات النظام**: Python 3.7+ والمكتبات المطلوبة
+
+### 📧 تواصل مع المطورين:
+- **Temper-Data**: SayerLinux@gmail.com
+- **أدوات الأمن الجديدة**: استخدم ملفات README لكل أداة
+
+### 🎓 نصائح للمبتدئين:
+1. **ابدأ بالأهداف التجريبية** مثل httpbin.org أو مواقعك الخاصة
+2. **اقرأ ملفات README المفصلة** لكل مجموعة أدوات
+3. **جرب الخيارات الافتراضية أولاً** قبل استخدام الخيارات المتقدمة
+4. **تحقق من النتائج يدوياً** دائماً قبل اتخاذ أي إجراء
+5. **احتفظ بنسخ احتياطية من جميع النتائج**
+
+===============================================
+## 🔄 تحديث وصيانة الأدوات
+## Tool Updates and Maintenance
+
+### 🔄 التحديث المنتظم:
+```bash
+# تحديث جميع المكتبات
+pip install --upgrade -r cloud-requirements.txt
+pip install --upgrade -r platform-requirements.txt
+pip install --upgrade -r zero-day-requirements.txt
+
+# التحقق من التحديثات
+pip list --outdated
+```
+
+### 📊 مراقبة الأداء:
+- **رصد وقت الفحص** لكل أداة
+- **تحليل دقة النتائج** عبر الزمن
+- **مراجعة استخدام الموارد** (CPU/Memory)
+- **تحديث قواعد البيانات** للثغرات الجديدة
+
+===============================================
+## 📊 ملخص سريع للأدوات
+## Quick Tools Summary
+
+| الأداة | الهدف الرئيسي | الاستخدام الأساسي | ملف النتائج |
+|--------|---------------|---------------------|-------------|
+| aws-security-scanner.py | فحص AWS | `python aws-scanner.py target.com` | JSON |
+| azure-security-scanner.py | فحص Azure | `python azure-scanner.py target.com` | JSON |
+| gcp-security-scanner.py | فحص GCP | `python gcp-scanner.py target.com` | JSON |
+| platform-vulnerability-scanner.py | فحص شامل | `python platform-scanner.py target.com` | JSON |
+| exchange-vulnerability-scanner.py | فحص Exchange | `python exchange-scanner.py mail.com` | JSON |
+| zoom-vulnerability-scanner.py | فحص Zoom | `python zoom-scanner.py domain.com` | JSON |
+| zero-day-scanner.py | ثغرات صفرية | `python zero-day-scanner.py target.com` | JSON |
+| web-zero-day-scanner.py | فحص ويب | `python web-scanner.py https://site.com` | JSON |
+| network-zero-day-scanner.py | فحص شبكة | `python network-scanner.py 192.168.1.1` | JSON |
+| temper-data.py | فحص CMS | `python temper-data.py -u site.com` | JSON |
+
+===============================================
+**📅 آخر تحديث: 2025-08-11**
+**📧 للدعم: راجع ملفات README المفصلة لكل أداة**
+
+**⚡ ملاحظة**: هذه الأدوات للأغراض التعليمية والاختبارية فقط. استخدمها بمسؤولية ووفقاً للقوانين المحلية.
+**Note**: These tools are for educational and testing purposes only. Use responsibly and in accordance with local laws.
+
+===============================================
